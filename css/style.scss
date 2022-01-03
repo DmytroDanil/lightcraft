@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 $font-stack: 'Open Sans', sans-serif;
-$bg-color: #fff;
+$bg-color: #ffffff;
 $font-color: #000;
 
-$first-color: #fff;
+$first-color: #ffffff;
 $second-color: #ffcc33;
-$third-color: #333;
-$fourth-color: #999;
+$third-color: #272727;
+$fourth-color: #999999;
 
 @mixin font ($size, $color, $weight) {
   font-size: $size;
@@ -198,7 +198,69 @@ body {
   }
 }
 .header {
-  
+  .container {
+    height: 700px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
+    background: url(../assets/img/header-img.jpg) center / cover no-repeat;
+  }
+  &__title {
+    @include font(100px, $second-color, 700);
+    font-style: italic;
+    text-shadow: 5px 5px 20px $second-color+aa;
+    margin: 0 70px;
+  }
+  &__subtitle {
+    width: 70%;
+    @include font(22px, $first-color, 400);
+    font-style: italic;
+    text-shadow: 5px 5px 20px $first-color+aa;
+    line-height: 1.1;
+    margin: 30px;
+  }
+}
+.about-us {
+  .container {
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+    background: url(../assets/img/lamp-mini.png) left 10% top 10% no-repeat,
+    url(../assets/img/lamp-mini.png) left 40% top 90% no-repeat,
+    url(../assets/img/lamp-mini.png) left 85% top 50% no-repeat
+  }
+  &__title {
+    @include font(50px, $font-color, 800);
+    text-shadow: 5px 5px 20px rgba(0,0,0,0.1);
+    span {
+      @include font(70px, $second-color, 800);
+      font-style: italic;
+      text-shadow: 5px 5px 20px $second-color+aa;
+    }
+  }
+  &__subtitle {
+    @include font(30px, $font-color, 600);
+    margin: 50px 0 20px 0;
+    text-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  &__item {
+    position: relative;
+    margin-left: 20px;
+    text-shadow: 0 0 20px rgba(0,0,0,0.2);
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 4px;
+      left: -20px;
+      width: 5px;
+      height: 8px;
+      border-bottom: 3px solid $second-color;
+      border-right: 3px solid $second-color;
+      transform: rotateZ(40deg);
+    }
+  }
 }
 .main {
   flex: 1 1 auto;
@@ -236,23 +298,25 @@ body {
       background: $second-color;
       transition: 0.3s;
     }
-    &:hover {
-      &::after {
-        width: 100%;
-        left: 0;
-        bottom: 45%;
-        transition: 0.3s;
-      }
-    }
+    // &:hover {
+    //   &::after {
+    //     width: 100%;
+    //     left: 0;
+    //     bottom: 45%;
+    //     transition: 0.3s;
+    //   }
+    // }
   }
   &__row {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
+    flex-wrap: wrap;
   }
   .tile {
     width: 25%;
-    padding: 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
     &__product {
       display: flex;
       flex-direction: column;
@@ -286,7 +350,7 @@ body {
   &__button {
     display: flex;
     justify-content: center;
-    margin: 50px auto;
+    margin: 40px auto 60px auto;
     border-radius: 5px;
     button {
       appearance: button;
@@ -319,4 +383,20 @@ body {
 }
 .cable-sys__title {
   @include bg-img('cable-sys');
+}
+.footer {
+  background: $third-color;
+  .container {
+    height: 400px;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__col {
+    height: 60%;
+    width: 25%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    @include font(14px, $first-color, 400);
+    line-height: 1.3;
+  }
 }
