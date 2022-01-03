@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LightCraft. Рішення у сфері світлотехнічного та електротехнічного забезпечення</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="nav" id="nav">
+      <div class="container">
+        <a href="#" class="nav__logo">
+          <img src="assets/img/logo.png" alt="LightCraft">
+        </a>
+        <p class="nav__address">м. Київ<br>вул. Віскозна, 4<br>корпус 93-А</p>
+        <ul class="nav__menu menu">
+          <li class="menu__items menu__items-anim">Про нас
+            <ul class="menu__item">
+              <li class="menu__link"><a href="#">Про компанію</a></li>
+              <li class="menu__link"><a href="#">Наш персонал</a></li>
+            </ul>
+          </li>
+          <li class="menu__items menu__items-anim">Продукція
+            <ul class="menu__item">
+              <li class="menu__link"><a href="#">Лампи</a>
+                <ul class="sub-menu__item">
+                  <li class="sub-menu__link"><a href="#">Розжарювання</a></li>
+                  <li class="sub-menu__link"><a href="#">Галогенові та світлодіодні аналоги</a></li>
+                  <li class="sub-menu__link"><a href="#">Компактні люмінісцентні</a></li>
+                  <li class="sub-menu__link"><a href="#">Люмінісцентні</a></li>
+                  <li class="sub-menu__link"><a href="#">Розрядні (ртутні, натрієві, металогалогенні)</a></li>
+                  <li class="sub-menu__link"><a href="#">Спеціальні, фотооптичні</a></li>
+                </ul>
+              </li>
+              <li class="menu__link"><a href="#">Світильники</a>
+                <ul class="sub-menu__item">
+                  <li class="sub-menu__link"><a href="#">Вуличні світильники</a></li>
+                  <li class="sub-menu__link"><a href="#">Прожектори</a></li>
+                  <li class="sub-menu__link"><a href="#">Адміністративно-офісне освітлення</a></li>
+                  <li class="sub-menu__link"><a href="#">Промислово-складське освітлення</a></li>
+                  <li class="sub-menu__link"><a href="#">Вибухозахищені світильники</a></li>
+                  <li class="sub-menu__link"><a href="#">Аварійні світильники та блоки живлення</a></li>
+                  <li class="sub-menu__link"><a href="#">Побутове освітлення</a></li>
+                </ul>
+              </li>
+              <li class="menu__link"><a href="#">Комплектуючі до світильників та ламп</a>
+                <ul class="sub-menu__item">
+                  <li class="sub-menu__link"><a href="#">Електронні баласти для люмінесцентних та компактних ламп</a></li>
+                  <li class="sub-menu__link"><a href="#">Електронні баласти для розрядних ламп</a></li>
+                  <li class="sub-menu__link"><a href="#">Електромагнітні баласти для люмінесцентних та компактних ламп</a></li>
+                  <li class="sub-menu__link"><a href="#">Електромагнітні баласти для розрядних ламп</a></li>
+                  <li class="sub-menu__link"><a href="#">Електронні трансформатори для галогенових ламп</a></li>
+                  <li class="sub-menu__link"><a href="#">Електронні джерела живлення для LED</a></li>
+                  <li class="sub-menu__link"><a href="#">Патрони та лампотримачі</a></li>
+                  <li class="sub-menu__link"><a href="#">Імпульсні зарядні пристрої (ІЗП)</a></li>
+                  <li class="sub-menu__link"><a href="#">Стартери</a></li>
+                  <li class="sub-menu__link"><a href="#">Конденсатори реактивної потужності</a></li>
+                </ul>
+              </li>
+              <li class="menu__link"><a href="#">Електротехніка</a>
+                <ul class="sub-menu__item">
+                  <li class="sub-menu__link"><a href="#">Модульне обладнання</a></li>
+                  <li class="sub-menu__link"><a href="#">Cилове обладнання</a></li>
+                  <li class="sub-menu__link"><a href="#">Комутаційне обладнання</a></li>
+                  <li class="sub-menu__link"><a href="#">Щитове обладнання</a></li>
+                  <li class="sub-menu__link"><a href="#">Лічильники</a></li>
+                  <li class="sub-menu__link"><a href="#">Монтажні вироби</a></li>
+                  <li class="sub-menu__link"><a href="#">Електрофурнітура</a></li>
+                </ul>
+              </li>
+              <li class="menu__link"><a href="#">Кабельно-провідникова продукція</a>
+                <ul class="sub-menu__item">
+                  <li class="sub-menu__link"><a href="#">Кабель силовий</a></li>
+                  <li class="sub-menu__link"><a href="#">Кабель силовий гнучкий</a></li>
+                  <li class="sub-menu__link"><a href="#">Кабель монтажний</a></li>
+                  <li class="sub-menu__link"><a href="#">Кабелі та проводи зв'язку</a></li>
+                  <li class="sub-menu__link"><a href="#">Контрольний</a></li>
+                  <li class="sub-menu__link"><a href="#">Кабель вогнестійкий</a></li>
+                  <li class="sub-menu__link"><a href="#">Кабель для слаботочних мереж</a></li>
+                  <li class="sub-menu__link"><a href="#">Провід для повітряних ліній передач</a></li>
+                  <li class="sub-menu__link"><a href="#">Провід й шнури різного призначення</a></li>
+                  <li class="sub-menu__link"><a href="#">Провід монтажний</a></li>
+                </ul>
+              </li>
+              <li class="menu__link"><a href="#">Системи прокладки кабелю</a>
+                <ul class="sub-menu__item">
+                  <li class="sub-menu__link"><a href="#">Металорукав</a></li>
+                  <li class="sub-menu__link"><a href="#">Кабельні канали</a></li>
+                  <li class="sub-menu__link"><a href="#">Гофротруба</a></li>
+                  <li class="sub-menu__link"><a href="#">Лотки</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__items menu__items-anim">Напрямки
+            <ul class="menu__item">
+              <li class="menu__link"><a href="#">Освітлення</a></li>
+              <li class="menu__link"><a href="#">Передача електричної енергії</a></li>
+              <li class="menu__link"><a href="#">Управління та перетворення енергії</a></li>
+            </ul>
+          </li>
+          <li class="menu__items menu__items-anim">Публікації
+            <ul class="menu__item">
+              <li class="menu__link"><a href="#">Новини</a></li>
+              <li class="menu__link"><a href="#">Статті</a></li>
+              <li class="menu__link"><a href="#">Акції</a></li>
+            </ul>
+          </li>
+          <li class="menu__items"><a href="#">Контакти</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header class="header" id="header">
+      <div class="container">
+        
+      </div>
+    </header>
+    <main class="main">
+      <div class="bulb item-block">
+        <div class="container">
+          <p class="item-block__title bulb__title">Лампи</p>
+          <p class="item-block__subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod earum dicta et mollitia nam cupiditate incidunt, quos a. Corrupti veritatis fuga reiciendis esse voluptates ex eveniet velit, praesentium ad quas!
+          Ipsam, voluptates iusto aperiam esse nobis sunt mollitia totam dicta optio voluptatum error consequatur expedita dignissimos molestiae a necessitatibus illo, quidem natus tempore repellat! Consequuntur hic iusto necessitatibus rerum modi?</p>
+          <p class="item-block__text">Найпопулярніші лампи</p>
+          <div class="item-block__row">
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+          </div>
+          <div class="item-block__row">
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="item-block__button">
+            <button>Дивитись всі</button>
+          </a>
+        </div>
+      </div>
+      <div class="lamp item-block">
+        <div class="container">
+          <p class="item-block__title lamp__title">Світильники</p>
+          <p class="item-block__subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod earum dicta et mollitia nam cupiditate incidunt, quos a. Corrupti veritatis fuga reiciendis esse voluptates ex eveniet velit, praesentium ad quas!
+          Ipsam, voluptates iusto aperiam esse nobis sunt mollitia totam dicta optio voluptatum error consequatur expedita dignissimos molestiae a necessitatibus illo, quidem natus tempore repellat! Consequuntur hic iusto necessitatibus rerum modi?</p>
+          <p class="item-block__text">Найпопулярніші світильники</p>
+          <div class="item-block__row">
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+          </div>
+          <div class="item-block__row">
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="item-block__button">
+            <button>Дивитись всі</button>
+          </a>
+        </div>
+      </div>
+      <div class="accessories item-block">
+        <div class="container">
+          <p class="item-block__title accessories__title">Комплектуючі до світильників та ламп</p>
+          <p class="item-block__subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod earum dicta et mollitia nam cupiditate incidunt, quos a. Corrupti veritatis fuga reiciendis esse voluptates ex eveniet velit, praesentium ad quas!
+          Ipsam, voluptates iusto aperiam esse nobis sunt mollitia totam dicta optio voluptatum error consequatur expedita dignissimos molestiae a necessitatibus illo, quidem natus tempore repellat! Consequuntur hic iusto necessitatibus rerum modi?</p>
+          <p class="item-block__text">Найпопулярніші комплектуючі до світильник та ламп</p>
+          <div class="item-block__row">
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+          </div>
+          <div class="item-block__row">
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="item-block__button">
+            <button>Дивитись всі</button>
+          </a>
+        </div>
+      </div>
+      <div class="electrical item-block">
+        <div class="container">
+          <p class="item-block__title electrical__title">Електротехніка</p>
+          <p class="item-block__subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod earum dicta et mollitia nam cupiditate incidunt, quos a. Corrupti veritatis fuga reiciendis esse voluptates ex eveniet velit, praesentium ad quas!
+          Ipsam, voluptates iusto aperiam esse nobis sunt mollitia totam dicta optio voluptatum error consequatur expedita dignissimos molestiae a necessitatibus illo, quidem natus tempore repellat! Consequuntur hic iusto necessitatibus rerum modi?</p>
+          <p class="item-block__text">Найпопулярніші продукти електротехніки</p>
+          <div class="item-block__row">
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+          </div>
+          <div class="item-block__row">
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="item-block__button">
+            <button>Дивитись всі</button>
+          </a>
+        </div>
+      </div>
+      <div class="cable item-block">
+        <div class="container">
+          <p class="item-block__title cable__title">Кабельно-провідникова продукція</p>
+          <p class="item-block__subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod earum dicta et mollitia nam cupiditate incidunt, quos a. Corrupti veritatis fuga reiciendis esse voluptates ex eveniet velit, praesentium ad quas!
+          Ipsam, voluptates iusto aperiam esse nobis sunt mollitia totam dicta optio voluptatum error consequatur expedita dignissimos molestiae a necessitatibus illo, quidem natus tempore repellat! Consequuntur hic iusto necessitatibus rerum modi?</p>
+          <p class="item-block__text">Найпопулярніші кабелі та провода</p>
+          <div class="item-block__row">
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+          </div>
+          <div class="item-block__row">
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="item-block__button">
+            <button>Дивитись всі</button>
+          </a>
+        </div>
+      </div>
+      <div class="cable-sys item-block">
+        <div class="container">
+          <p class="item-block__title cable-sys__title">Системи прокладки кабелю</p>
+          <p class="item-block__subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod earum dicta et mollitia nam cupiditate incidunt, quos a. Corrupti veritatis fuga reiciendis esse voluptates ex eveniet velit, praesentium ad quas!
+          Ipsam, voluptates iusto aperiam esse nobis sunt mollitia totam dicta optio voluptatum error consequatur expedita dignissimos molestiae a necessitatibus illo, quidem natus tempore repellat! Consequuntur hic iusto necessitatibus rerum modi?</p>
+          <p class="item-block__text">Найпопулярніші системи прокладки кабелю</p>
+          <div class="item-block__row">
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+          </div>
+          <div class="item-block__row">
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+            <div class="item-block__tile tile">
+              <div class="tile__product">
+                <a href="#" class="tile__img"><img src="#" alt="#"></a>
+                <p class="tile__title"><a href="#">Lorem ipsum</a></p>
+                <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="item-block__button">
+            <button>Дивитись всі</button>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="container">
+        
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
