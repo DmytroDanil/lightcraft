@@ -10,6 +10,7 @@ $first-color: #ffffff;
 $second-color: #ffcc33;
 $third-color: #272727;
 $fourth-color: #999999;
+$fifth-color: #484848;
 
 @mixin font($size, $color, $weight) {
   font-size: $size;
@@ -302,70 +303,9 @@ body {
     margin: 30px;
   }
 }
-.about-us {
-  .container {
-    height: 600px;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.4;
-    background: url(../assets/img/lamp-mini.png) left 10% top 10% no-repeat,
-      url(../assets/img/lamp-mini.png) left 40% top 90% no-repeat,
-      url(../assets/img/lamp-mini.png) left 85% top 50% no-repeat;
-  }
-  &__title {
-    @include font(50px, $font-color, 800);
-    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-    span {
-      @include font(70px, $second-color, 800);
-      font-style: italic;
-      text-shadow: 5px 5px 20px $second-color + aa;
-    }
-  }
-  &__subtitle {
-    @include font(30px, $font-color, 600);
-    margin: 50px 0 20px 0;
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  }
-  &__item {
-    position: relative;
-    margin-left: 20px;
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 4px;
-      left: -20px;
-      width: 5px;
-      height: 8px;
-      border-bottom: 3px solid $second-color;
-      border-right: 3px solid $second-color;
-      transform: rotateZ(40deg);
-    }
-  }
-}
 .main {
   flex: 1 1 auto;
-}
-.item-block {
   &__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-    @include font(80px, $first-color, 700);
-    text-align: center;
-    line-height: 1.1;
-    letter-spacing: 3px;
-    text-shadow: 0 0 20px $font-color;
-  }
-  &__subtitle {
-    margin: 15px;
-    line-height: 1.3;
-    @include font(20px, $third-color, 400);
-  }
-  &__text {
     padding: 20px 15px;
     @include font(30px, $font-color, 600);
     position: relative;
@@ -378,21 +318,48 @@ body {
       height: 2px;
       width: 80%;
       background: $second-color;
-      transition: 0.3s;
+      transition: all 0.3s ease-out;
     }
-    // &:hover {
-    //   &::after {
-    //     width: 100%;
-    //     left: 0;
-    //     bottom: 45%;
-    //     transition: 0.3s;
-    //   }
-    // }
+  }
+}
+.welcome-block {
+  .container {
+    align-items: flex-end;
+    margin: 50px auto;
+    &:hover {
+      span {
+        text-shadow: 0 0 100px $second-color;
+        transition: all 0.3s ease-out;
+      }
+    }
+  }
+  &__head {
+    @include font(50px, $font-color, 800);
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    span {
+      @include font(70px, $second-color, 800);
+      font-style: italic;
+      text-shadow: 5px 5px 20px $second-color + aa;
+      transition: all 0.3s ease-out;
+    }
+  }
+}
+.item-block {
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    @include font(60px, $first-color, 700);
+    text-align: center;
+    line-height: 1.1;
+    letter-spacing: 3px;
+    text-shadow: 0 0 20px $font-color;
   }
   &__row {
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
     flex-wrap: wrap;
   }
   .tile {
@@ -432,7 +399,7 @@ body {
   &__button {
     display: flex;
     justify-content: center;
-    margin: 40px auto 60px auto;
+    margin: 20px auto 50px auto;
     border-radius: 5px;
     button {
       appearance: button;
@@ -466,6 +433,92 @@ body {
 .cable-sys__title {
   @include bg-img("cable-sys");
 }
+.about-us {
+  .container {
+    height: 400px;
+    justify-content: center;
+    line-height: 1.4;
+    // background: url(../assets/img/lamp-mini.png) left 10% top 10% no-repeat,
+    //   url(../assets/img/lamp-mini.png) left 40% top 90% no-repeat,
+    //   url(../assets/img/lamp-mini.png) left 85% top 50% no-repeat;
+  }
+  &__title {
+    @include font(50px, $font-color, 800);
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    span {
+      @include font(70px, $second-color, 800);
+      font-style: italic;
+      text-shadow: 5px 5px 20px $second-color + aa;
+    }
+  }
+  &__subtitle {
+    @include font(30px, $font-color, 600);
+    margin: 50px 0 20px 0;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__item {
+    position: relative;
+    width: 33.333%;
+    padding: 20px 10px 20px 60px;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 33%;
+      left: 30px;
+      width: 8px;
+      height: 15px;
+      border-bottom: 5px solid $second-color;
+      border-right: 5px solid $second-color;
+      transform: rotateZ(40deg);
+    }
+  }
+}
+.contacts {
+  .container {
+    height: 600px;
+  }
+  &__row {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 15px;
+  }
+  &__map {
+    width: 70%;
+    &-google {
+      width: 800px;
+      height: 400px;
+    }
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+  }
+  &__items {
+    margin: 10px 0;
+    &:first-child {
+      margin-top: 50px;
+    }
+  }
+  &__item {
+    @include font(18px, $font-color, 400);
+    line-height: 1.6;
+    a {
+      @include font(18px, $font-color, 600);
+      transition: all 0.3s ease-out;
+      &:hover {
+        color: $second-color;
+        transition: all 0.3s ease-out;
+      }
+    }
+  }
+}
 .footer {
   background: $third-color;
   .container {
@@ -475,27 +528,16 @@ body {
     align-items: center;
   }
   &__col {
-    height: 60%;
+    height: 70%;
     width: 25%;
-    padding: 0 20px;
+    padding: 0 10px;
     box-sizing: border-box;
     line-height: 1.3;
   }
-  &__logo {
-    &-link {
-      display: block;
-      width: fit-content;
-      margin-bottom: 20px;
-    }
-    &-subtitle {
-      @include font(14px, $first-color, 400);
-    }
-  }
-
   &__title {
     display: block;
     width: fit-content;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     @include font(22px, $first-color, 400);
     &::after {
       content: "";
@@ -511,7 +553,8 @@ body {
       display: block;
       width: fit-content;
       padding: 5px;
-      @include font(16px, $first-color, 400);
+      // padding: 5px 35px 5px 5px;
+      @include font(14px, $first-color, 400);
       text-transform: uppercase;
       transition: all 0.3s ease-out;
       &:hover {
@@ -528,7 +571,7 @@ body {
   }
   &__row {
     &:first-child {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
   }
   &__item {
@@ -556,16 +599,37 @@ body {
       height: 40px;
       border-radius: 50%;
       background: $first-color;
-      @include font(24px, $third-color, 400);
+      @include font(22px, $third-color, 400);
       transition: all 0.3s ease-out;
       &:hover {
         transform: scale(1.2);
         background: $second-color;
+        color: $first-color;
         transition: all 0.3s ease-out;
       }
     }
   }
   &__map-img {
     background: url(../assets/img/map-img.png) center / cover no-repeat;
+  }
+}
+.footer-bottom {
+  background: $third-color;
+  border-top: 1px solid $fifth-color;
+  .container {
+    background: $third-color;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  &__copyright {
+    @include font(12px, $first-color, 400);
+  }
+  &__logo {
+    display: block;
+    height: 100%;
+    padding: 5px;
   }
 }
