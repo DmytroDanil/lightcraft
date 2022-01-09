@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Про нас. LightCraft</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header" id="header">
+      <div class="container">
+        <a href="#" class="header__logo">
+          <img src="assets/img/logo.png" alt="LightCraft">
+        </a>
+        <p class="header__address">вул. Віскозна, 17<br>корпус 93-А<br>м. Київ, Україна</p>
+        <nav class="header__menu nav" id="nav">
+          <div class="nav__items menu">Про нас
+            <ul class="menu__item">
+              <li class="menu__link"><a href="about-us.html">Про компанію</a></li>
+              <li class="menu__link"><a href="our-staff.html">Наш персонал</a></li>
+            </ul>
+          </div>
+          <div class="nav__items menu">Продукція
+            <ul class="menu__item">
+              <li class="menu__link menu__link-anim"><a href="#">Лампи</a>
+                <ul class="sub-menu__item">
+                  <li class="sub-menu__link"><a href="#">Розжарювання</a></li>
+                  <li class="sub-menu__link"><a href="#">Галогенові та світлодіодні аналоги</a></li>
+                  <li class="sub-menu__link"><a href="#">Компактні люмінісцентні</a></li>
+                  <li class="sub-menu__link"><a href="#">Люмінісцентні</a></li>
+                  <li class="sub-menu__link"><a href="#">Розрядні (ртутні, натрієві, металогалогенні)</a></li>
+                  <li class="sub-menu__link"><a href="#">Спеціальні, фотооптичні</a></li>
+                </ul>
+              </li>
+              <li class="menu__link menu__link-anim"><a href="#">Світильники</a>
+                <ul class="sub-menu__item">
+                  <li class="sub-menu__link"><a href="#">Вуличні світильники</a></li>
+                  <li class="sub-menu__link"><a href="#">Прожектори</a></li>
+                  <li class="sub-menu__link"><a href="#">Адміністративно-офісне освітлення</a></li>
+                  <li class="sub-menu__link"><a href="#">Промислово-складське освітлення</a></li>
+                  <li class="sub-menu__link"><a href="#">Вибухозахищені світильники</a></li>
+                  <li class="sub-menu__link"><a href="#">Аварійні світильники та блоки живлення</a></li>
+                  <li class="sub-menu__link"><a href="#">Побутове освітлення</a></li>
+                </ul>
+              </li>
+              <li class="menu__link menu__link-anim"><a href="#">Комплектуючі до світильників і ламп</a>
+                <ul class="sub-menu__item">
+                  <li class="sub-menu__link"><a href="#">Електронні баласти для люмінесцентних та компактних ламп</a>
+                  </li>
+                  <li class="sub-menu__link"><a href="#">Електронні баласти для розрядних ламп</a></li>
+                  <li class="sub-menu__link"><a href="#">Електромагнітні баласти для люмінесцентних та компактних
+                      ламп</a></li>
+                  <li class="sub-menu__link"><a href="#">Електромагнітні баласти для розрядних ламп</a></li>
+                  <li class="sub-menu__link"><a href="#">Електронні трансформатори для галогенових ламп</a></li>
+                  <li class="sub-menu__link"><a href="#">Електронні джерела живлення для LED</a></li>
+                  <li class="sub-menu__link"><a href="#">Патрони та лампотримачі</a></li>
+                  <li class="sub-menu__link"><a href="#">Імпульсні зарядні пристрої (ІЗП)</a></li>
+                  <li class="sub-menu__link"><a href="#">Стартери</a></li>
+                  <li class="sub-menu__link"><a href="#">Конденсатори реактивної потужності</a></li>
+                </ul>
+              </li>
+              <li class="menu__link menu__link-anim"><a href="#">Електротехніка</a>
+                <ul class="sub-menu__item sub-menu__item-sub">
+                  <li class="sub-menu__link menu__link-anim"><a href="#">Модульне обладнання</a>
+                    <ul class="sub-sub-menu__item">
+                      <li class="sub-sub-menu__link"><a href="#">Вимикачі автоматичні</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Вимикачі автоматичні диференційні</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Пристрої захисного відключення</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Вимикачі навантаження</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Вимикачі автоматичні захисту двигунів</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Контактори</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Контроль та керування</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu__link menu__link-anim"><a href="#">Cилове обладнання</a>
+                    <ul class="sub-sub-menu__item">
+                      <li class="sub-sub-menu__link"><a href="#">Вимикачі автоматичні силові</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Вимикачі навантаження</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Роз’єднувачі</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Вимикачі автоматичні захисту двигунів</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Пристрої плавного пуску</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu__link menu__link-anim"><a href="#">Комутаційне обладнання</a>
+                    <ul class="sub-sub-menu__item">
+                      <li class="sub-sub-menu__link"><a href="#">Контактори промислові</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Реле</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Арматура світлосигнальна</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu__link menu__link-anim"><a href="#">Щитове обладнання</a>
+                    <ul class="sub-sub-menu__item">
+                      <li class="sub-sub-menu__link"><a href="#">Шафи розподілу</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Шафи обліку</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Шафи з монтажною панеллю</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Приналежності</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu__link"><a href="#">Лічильники</a></li>
+                  <li class="sub-menu__link menu__link-anim"><a href="#">Монтажні вироби</a>
+                    <ul class="sub-sub-menu__item">
+                      <li class="sub-sub-menu__link"><a href="#">Клемники</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Хомути</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Наконечники</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Коробки</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu__link menu__link-anim"><a href="#">Електрофурнітура</a>
+                    <ul class="sub-sub-menu__item">
+                      <li class="sub-sub-menu__link"><a href="#">Вимикачі</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Розетки</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Подовжувачі</a></li>
+                      <li class="sub-sub-menu__link"><a href="#">Коробки</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__link menu__link-anim"><a href="#">Кабельно-провідникова продукція</a>
+                <ul class="sub-menu__item">
+                  <li class="sub-menu__link"><a href="#">Кабель силовий</a></li>
+                  <li class="sub-menu__link"><a href="#">Кабель силовий гнучкий</a></li>
+                  <li class="sub-menu__link"><a href="#">Кабель монтажний</a></li>
+                  <li class="sub-menu__link"><a href="#">Кабелі та проводи зв'язку</a></li>
+                  <li class="sub-menu__link"><a href="#">Контрольний</a></li>
+                  <li class="sub-menu__link"><a href="#">Кабель вогнестійкий</a></li>
+                  <li class="sub-menu__link"><a href="#">Кабель для слаботочних мереж</a></li>
+                  <li class="sub-menu__link"><a href="#">Провід для повітряних ліній передач</a></li>
+                  <li class="sub-menu__link"><a href="#">Провід й шнури різного призначення</a></li>
+                  <li class="sub-menu__link"><a href="#">Провід монтажний</a></li>
+                </ul>
+              </li>
+              <li class="menu__link menu__link-anim"><a href="#">Системи прокладки кабелю</a>
+                <ul class="sub-menu__item">
+                  <li class="sub-menu__link"><a href="#">Металорукав</a></li>
+                  <li class="sub-menu__link"><a href="#">Кабельні канали</a></li>
+                  <li class="sub-menu__link"><a href="#">Гофротруба</a></li>
+                  <li class="sub-menu__link"><a href="#">Лотки</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__items menu">Напрямки
+            <ul class="menu__item">
+              <li class="menu__link"><a href="#">Освітлення</a></li>
+              <li class="menu__link"><a href="#">Передача електричної енергії</a></li>
+              <li class="menu__link"><a href="#">Управління та перетворення енергії</a></li>
+            </ul>
+          </div>
+          <div class="nav__items menu">Публікації
+            <ul class="menu__item">
+              <li class="menu__link"><a href="#">Новини</a></li>
+              <li class="menu__link"><a href="#">Статті</a></li>
+              <li class="menu__link"><a href="#">Акції</a></li>
+            </ul>
+          </div>
+          <div class="nav__items nav__items-btn"><a href="#">Контакти</a></div>
+          <div class="nav__items search icon-search">
+            <form action="#" method="get" enctype="multipart/form-data" class="search__form" id="search__form">
+              <input type="text" id="search__input" class="search__input">
+              <button type="submit" id="search__button" class="search__button icon-search"></button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main page">
+      <div class="about-us about-company">
+        <div class="container">
+          <p class="main__title">Про компанію</p>
+          <div class="about-us__row">
+            <p class="about-us__text">Ви втомилися самостійно вибирати освітлення / електротехніку і керуватися не
+              повним
+              набором характеристик без будь-якої допомоги, коли вона так потрібна? Ви навіть не зовсім впевнені в тому,
+              наскільки довго прослужить продукт електротехніки, так як не до кінця розумієте, що Вам потрібно або ж не
+              до
+              кінця впевнені в його якості.</p>
+            <p class="about-us__text">«Лайт Крафт» - це компанія, з якою у Вас не виникне подібних питань і
+              сумнівів.
+              Незважаючи на те, що ми ведемо свою діяльність відносно недовго, у наших фахівців досвід роботи в цій
+              сфері
+              становить більше 10 років, тому ми з радістю відповімо на всі Ваші запитання, і будемо супроводжувати Вас
+              від моменту, коли Ви тільки визначаєтесь із замовленням, до установки і налаштування обладнання.</p>
+            <p class="about-us__text">У 2015 році народилася ідея створити «Лайт Крафт» для того, щоб об'єднати
+              досвід
+              наших фахівців під одним дахом і максимізувати нашу користь для Вас. Протягом небагатьох років нашого
+              існування ми з кожним днем розширюємо наш досвід та портфель продуктів і послуг для того, щоб Ви могли
+              довіряти нашій компанії і вирішувати свої найскладніші проблеми, що стосуються електроспоживання.</p>
+            <p class="about-us__text">Культура компанії представлена її унікальною метою, переконаннями, поведінкою
+              і
+              відносинами.<br>
+              Наша мета прекрасно ілюструється в нашому баченні - це зміцнює то значення, яке ми надаємо нашому впливу
+              на
+              світ, оскільки потреба в енергії продовжує рости. Ми знаємо, що для досягнення цього бачення нам
+              необхідно:
+            </p>
+            <ul class="about-us__items about-us__text">
+              <li class="about-us__item">Розвивати наших співробітників, допомагаючи їм досягти успіху не тільки на
+                роботі, але і в житті</li>
+              <li class="about-us__item">Насолоджуватися нашими клієнтами, розуміючи їхні проблеми і пропонуючи
+                реальні
+                рішення</li>
+              <li class="about-us__item">Пропонувати наш час і талант для задоволення соціальних і економічних
+                потреб, де
+                ми працюємо і живемо</li>
+            </ul>
+            <p class="about-us__text">Відповідно до наших цінностей і прагненнь поліпшити якість життя людей і
+              нашого
+              навколишнього середовища, наш бренд обіцяє - ми робимо все, що має значення, - це якраз і виражає дух
+              того,
+              що ми робимо, і що ще більш важливо, чому ми це робимо. Робота, яку ми робимо, підвищує безпеку,
+              надійність,
+              ефективність і стійкість.</p>
+            <p class="about-us__text">Якщо говорити більш детально про наші цілі, то досягнення наших цілей не
+              стосується тільки фінансового боку, як прийнято вважати, але в й духовного. Досягнення наших духовних
+              цілей так само важливе, як і фінансових. Ми поставили ці цілі для того, щоб об'єднати організацію навколо
+              нашої спільної мети, навколо того, хто ми, як компанія.</p>
+            <ul class="about-us__items about-us__text">
+              <li class="about-us__item">Ми робимо роботу цікавою, привабливою і значущою для наших співробітників</li>
+              <li class="about-us__item">Ми зміцнюємо суспільство</li>
+              <li class="about-us__item">Ми забезпечуємо здоров'я і безпеку для наших співробітників</li>
+              <li class="about-us__item">Ми діючі стюарди навколишнього середовища</li>
+            </ul>
+            <p class="about-us__text">Наші атрибути керівництва представляють нашу культуру і цінності. Це те, що ми
+              очікуємо від кожного співробітника Лайт Крафт, і те, що ми вважаємо, допоможе нам продовжувати бути
+              першими на ринку.</p>
+            <ul class="about-us__items about-us__text">
+              <li class="about-us__item">Ми етичні</li>
+              <li class="about-us__item">Ми розуміючі</li>
+              <li class="about-us__item">Ми чесні</li>
+              <li class="about-us__item">Ми ефективні</li>
+              <li class="about-us__item">Ми прозорі</li>
+              <li class="about-us__item">Ми вчимо</li>
+            </ul>
+            <p class="about-us__text">Наше бачення ґрунтується на наших цілях і атрибутах лідерства. Разом вони
+              направляють кожен аспект нашого бізнесу - від людей, яких ми наймаємо, до наших продуктів і послуг, нашим
+              діловим партнерам і клієнтам.</p>
+          </div>
+          <p class="main__title">Ми робимо все, що має значення</p>
+          <div class="about-us__row">
+            <p class="about-us__text">Кожен день, в усьому світі, люди залежать від технологій, транспорту, енергії і
+              інфраструктури, щоб жити, працювати і процвітати. І компанії, які надають ці продукти і послуги, залежать
+              від нас, щоб допомогти вирішити деякі з найскладніших електричних, гідравлічних і механічних завдань в
+              управлінні потужністю на планеті. Тому що ми ніколи не втрачаємо з уваги те, що важливо. І наша робота -
+              переконатися, що це працює.</p>
+            <p class="about-us__text">Ми працюємо з передовими технологіями, що дозволить Вам йти в ногу з часом і
+              забезпечимо Вас передовими розробками в світі освітлення і електротехніки, ознайомимо з інноваціями і
+              порекомендуємо що підійде саме Вам.</p>
+            <p class="about-us__text">Індивідуальний підхід і орієнтація на клієнта - це концепція нашої роботи. Більш
+              того, де б Ви не знаходилися, ми зробимо доставку в будь-яке місце і в зручний для Вас час.</p>
+            <p class="about-us__text">А тривале співробітництво з такими компаніями, як OSRAM, EATON, SCHREDER, DKC, GE,
+              LUMEN, ЗЗКМ, АСКО забезпечує широкий асортимент нашої продукції, серед якого представлені такі групи, як:
+            </p>
+            <ul class="about-us__items about-us__text">
+              <li class="about-us__item">Продукція для комплектації індустріальних, промислових і будівельних об'єктів
+                (електротехніка, кабельно-провідникова продукція, світлотехніка)</li>
+              <li class="about-us__item">Сучасні технології для освітлення, підведення і управління електричною енергією
+                житлових приміщень</li>
+              <li class="about-us__item">Енергозберігаючі рішення для офісних і громадських приміщень</li>
+              <li class="about-us__item">Вулична електро-світлотехнічна інфраструктура</li>
+              <li class="about-us__item">Електротехнічне і світлотехнічне обладнання для портів, стадіонів, ж/д станцій
+                і т.д.</li>
+            </ul>
+            <p class="about-us__text">У нас постійно діють акції і для кожного доступна система гнучких цін - це
+              дозволить Вам зробити покупку з найбільш вигідними умовами. Якщо Ви хочете отримати не тільки якісний
+              товар, але і допомогу фахівців, вигідні ціни та індивідуальний підхід, то компанія «Лайт Крафт» - то, що
+              ви шукали!</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__col">
+          <p class="footer__title">Компанія</p>
+          <ul class="footer__items">
+            <li class="footer__link"><a href="#">Про компанію</a></li>
+            <li class="footer__link"><a href="#">Оплата і доставка</a></li>
+            <li class="footer__link"><a href="#">Сервіс</a></li>
+            <li class="footer__link"><a href="#">Статті</a></li>
+            <li class="footer__link"><a href="#">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__title">Каталог</p>
+          <ul class="footer__items">
+            <li class="footer__link"><a href="#">Лампи</a></li>
+            <li class="footer__link"><a href="#">Світильники</a></li>
+            <li class="footer__link"><a href="#">Комплектуючі до<br>світильників і ламп</a></li>
+            <li class="footer__link"><a href="#">Електротехніка</a></li>
+            <li class="footer__link"><a href="#">Кабельно-провідникова<br>продукція</a></li>
+            <li class="footer__link"><a href="#">Системи прокладки кабелю</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <div class="footer__row">
+            <p class="footer__title">Інтернет-магазин</p>
+            <div class="footer__items">
+              <p class="footer__item">Години роботи:</p>
+              <p class="footer__item">Пн-Пт з 9:00 до 17:30</p>
+            </div>
+          </div>
+          <div class="footer__row">
+            <p class="footer__title">Слідкуйте за нами</p>
+            <ul class="footer__items social">
+              <li class="social__link"><a href="#" class="social__icon icon-facebook"></a></li>
+              <li class="social__link"><a href="#" class="social__icon icon-instagram"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__col">
+          <p class="footer__title">Контакти</p>
+          <div class="footer__items footer__map-img">
+            <p class="footer__item">вул. Віскозна, 17, корпус 93-А</p>
+            <p class="footer__item">м. Київ, Україна, 02094</p>
+            <p class="footer__item">Тел: <a href="tel:+380445411425">+380 (44) 541-14-25</a></p>
+            <p class="footer__item">Факс: +380 (44) 541-14-52</p>
+            <p class="footer__item">Email: <a href="mailto:zakaz@lightcraft.com.ua">zakaz@lightcraft.com.ua</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-bottom" id="footer-bottom">
+      <div class="container">
+        <p class="footer-bottom__copyright">LightCraft © 2022. Використання матеріалів сайту можливе лише з дозволу його
+          власників.</p>
+        <img src="assets/img/footer-logo.png" alt="LightCraft" class="footer-bottom__logo">
+      </div>
+    </footer>
+  </div>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

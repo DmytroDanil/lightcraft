@@ -6,26 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LightCraft. Рішення у сфері світлотехнічного та електротехнічного забезпечення</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
   <div class="wrapper">
-    <nav class="nav" id="nav">
+    <header class="header" id="header">
       <div class="container">
-        <a href="#" class="nav__logo">
+        <a href="#" class="header__logo">
           <img src="assets/img/logo.png" alt="LightCraft">
         </a>
-        <p class="nav__address">вул. Віскозна, 17<br>корпус 93-А<br>м. Київ, Україна</p>
-        <ul class="nav__menu menu">
-          <li class="menu__items menu__items-anim">Про нас
+        <p class="header__address">вул. Віскозна, 17<br>корпус 93-А<br>м. Київ, Україна</p>
+        <nav class="header__menu nav" id="nav">
+          <div class="nav__items menu">Про нас
             <ul class="menu__item">
-              <li class="menu__link"><a href="#">Про компанію</a></li>
-              <li class="menu__link"><a href="#">Наш персонал</a></li>
+              <li class="menu__link"><a href="about-us.html">Про компанію</a></li>
+              <li class="menu__link"><a href="our-staff.html">Наш персонал</a></li>
             </ul>
-          </li>
-          <li class="menu__items menu__items-anim">Продукція
+          </div>
+          <div class="nav__items menu">Продукція
             <ul class="menu__item">
               <li class="menu__link menu__link-anim"><a href="#">Лампи</a>
                 <ul class="sub-menu__item">
@@ -143,32 +144,68 @@
                 </ul>
               </li>
             </ul>
-          </li>
-          <li class="menu__items menu__items-anim">Напрямки
+          </div>
+          <div class="nav__items menu">Напрямки
             <ul class="menu__item">
               <li class="menu__link"><a href="#">Освітлення</a></li>
               <li class="menu__link"><a href="#">Передача електричної енергії</a></li>
               <li class="menu__link"><a href="#">Управління та перетворення енергії</a></li>
             </ul>
-          </li>
-          <li class="menu__items menu__items-anim">Публікації
+          </div>
+          <div class="nav__items menu">Публікації
             <ul class="menu__item">
               <li class="menu__link"><a href="#">Новини</a></li>
               <li class="menu__link"><a href="#">Статті</a></li>
               <li class="menu__link"><a href="#">Акції</a></li>
             </ul>
-          </li>
-          <li class="menu__items menu__items-btn"><a href="#">Контакти</a></li>
-        </ul>
-      </div>
-    </nav>
-    <header class="header" id="header">
-      <div class="container">
-        <p class="header__title">lightcraft</p>
-        <p class="header__subtitle">Ми спеціалізуємось на комплексних поставках рішень у сфері електротехнічного та
-          світлотехнічного забезпечення об'єктів будівництва.</p>
+          </div>
+          <div class="nav__items nav__items-btn"><a href="#">Контакти</a></div>
+          <div class="nav__items search icon-search">
+            <form action="#" method="get" enctype="multipart/form-data" class="search__form" id="search__form">
+              <input type="text" id="search__input" class="search__input">
+              <button type="submit" id="search__button" class="search__button icon-search"></button>
+            </form>
+          </div>
+        </nav>
       </div>
     </header>
+    <div class="slider" id="slider">
+      <div class="container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="slider__item swiper-slide">
+              <img src="assets/img/slider-img.jpg" alt="">
+              <div class="slider__text">
+                <p class="slider__title">lightcraft</p>
+                <p class="slider__subtitle">Ми спеціалізуємось на комплексних поставках рішень у сфері електротехнічного
+                  та
+                  світлотехнічного забезпечення об'єктів будівництва.</p>
+              </div>
+            </div>
+            <div class="slider__item swiper-slide">
+              <img src="assets/img/slider-img.jpg" alt="">
+              <div class="slider__text">
+                <p class="slider__title">lightcraft</p>
+                <p class="slider__subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo fugit minima
+                  praesentium, repellat ullam ut magni obcaecati hic.</p>
+              </div>
+            </div>
+            <div class="slider__item swiper-slide">
+              <img src="assets/img/slider-img.jpg" alt="">
+              <div class="slider__text">
+                <p class="slider__title">lightcraft</p>
+                <p class="slider__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+                  pariatur blanditiis iste ducimus facilis aperiam hic aut aspernatur ipsam, laborum quod delectus
+                  veniam, consequuntur sint? Inventore eius id quo. Dignissimos!</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
     <main class="main">
       <div class="welcome-block">
         <div class="container">
@@ -180,28 +217,28 @@
           <p class="main__title">Новинки</p>
           <div class="item-block__row">
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
@@ -219,28 +256,28 @@
           <p class="main__title">Топ продажу</p>
           <div class="item-block__row">
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
@@ -258,28 +295,28 @@
           <p class="main__title">Топ продажу</p>
           <div class="item-block__row">
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
@@ -297,28 +334,28 @@
           <p class="main__title">Топ продажу</p>
           <div class="item-block__row">
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
@@ -336,28 +373,28 @@
           <p class="main__title">Топ продажу</p>
           <div class="item-block__row">
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
@@ -375,28 +412,28 @@
           <p class="main__title">Топ продажу</p>
           <div class="item-block__row">
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
@@ -414,28 +451,28 @@
           <p class="main__title">Топ продажу</p>
           <div class="item-block__row">
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
               </div>
             </div>
             <div class="item-block__tile tile">
-              <div class="tile__product">
+              <div class="tile__item">
                 <a href="#" class="tile__img"><img src="#" alt="#"></a>
                 <p class="tile__title"><a href="#">Lorem ipsum</a></p>
                 <p class="tile__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
@@ -448,17 +485,22 @@
         </div>
       </div>
     </main>
-    <div class="about-us" id="about-us">
+    <div class="advantages" id="advantages">
       <div class="container">
         <p class="main__title">Наші переваги</p>
-        <ul class="about-us__items">
-          <li class="about-us__item">розробка концепції електропостачання та освітлення</li>
-          <li class="about-us__item">світлотехнічне проектування і розрахунок освітленості</li>
-          <li class="about-us__item">підбір оптимального обладнання</li>
-          <li class="about-us__item">своєчасна поставка обладнання</li>
-          <li class="about-us__item">контроль правильності проведення інсталяції обладнання</li>
-          <li class="about-us__item">гарантійне та післягарантійне обслуговування обладнання</li>
+        <ul class="advantages__items">
+          <li class="advantages__item">розробка концепції електропостачання та освітлення</li>
+          <li class="advantages__item">світлотехнічне проектування і розрахунок освітленості</li>
+          <li class="advantages__item">підбір оптимального обладнання</li>
+          <li class="advantages__item">своєчасна поставка обладнання</li>
+          <li class="advantages__item">контроль правильності проведення інсталяції обладнання</li>
+          <li class="advantages__item">гарантійне та післягарантійне обслуговування обладнання</li>
         </ul>
+        <div class="advantages__row">
+          <p class="advantages__text">Скористайтесь перевагами, які надає сучасне світлодіодне освітлення. Заощаджуйте
+            на витратах на електроенергію і технічне обслуговування.</p>
+          <p class="advantages__regards">З повагою, колектив LightCraft</p>
+        </div>
       </div>
     </div>
     <div class="contacts" id="contacts">
@@ -471,7 +513,7 @@
               width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
               class="contacts__map-google"></iframe>
           </div>
-          <div class="contacts__block">
+          <div class="contacts__col">
             <div class="contacts__items">
               <p class="contacts__item">вул. Віскозна, 17, корпус 93-А</p>
               <p class="contacts__item">м. Київ, Україна, 02094</p>
@@ -488,6 +530,49 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="about-us" id="about-is">
+      <div class="container">
+        <p class="main__title">Про компанію</p>
+        <div class="about-us__row">
+          <p class="about-us__text">Ви втомилися самостійно вибирати освітлення / електротехніку і керуватися не
+            повним
+            набором характеристик без будь-якої допомоги, коли вона так потрібна? Ви навіть не зовсім впевнені в тому,
+            наскільки довго прослужить продукт електротехніки, так як не до кінця розумієте, що Вам потрібно або ж не до
+            кінця впевнені в його якості.</p>
+          <p class="about-us__text">«Лайт Крафт» - це компанія, з якою у Вас не виникне подібних питань і сумнівів.
+            Незважаючи на те, що ми ведемо свою діяльність відносно недовго, у наших фахівців досвід роботи в цій сфері
+            становить більше 10 років, тому ми з радістю відповімо на всі Ваші запитання, і будемо супроводжувати Вас
+            від моменту, коли Ви тільки визначаєтесь із замовленням, до установки і налаштування обладнання.</p>
+          <p class="about-us__text">У 2015 році народилася ідея створити «Лайт Крафт» для того, щоб об'єднати
+            досвід
+            наших фахівців під одним дахом і максимізувати нашу користь для Вас. Протягом небагатьох років нашого
+            існування ми з кожним днем розширюємо наш досвід та портфель продуктів і послуг для того, щоб Ви могли
+            довіряти нашій компанії і вирішувати свої найскладніші проблеми, що стосуються електроспоживання.</p>
+          <p class="about-us__text">Культура компанії представлена її унікальною метою, переконаннями, поведінкою і
+            відносинами.<br>
+            Наша мета прекрасно ілюструється в нашому баченні - це зміцнює то значення, яке ми надаємо нашому впливу на
+            світ, оскільки потреба в енергії продовжує рости. Ми знаємо, що для досягнення цього бачення нам необхідно:
+          </p>
+          <ul class="about-us__items about-us__text">
+            <li class="about-us__item">розвивати наших співробітників, допомагаючи їм досягти успіху не тільки на
+              роботі, але і в житті</li>
+            <li class="about-us__item">насолоджуватися нашими клієнтами, розуміючи їхні проблеми і пропонуючи
+              реальні
+              рішення</li>
+            <li class="about-us__item">пропонувати наш час і талант для задоволення соціальних і економічних
+              потреб, де
+              ми працюємо і живемо</li>
+          </ul>
+          <p class="about-us__text">Відповідно до наших цінностей і прагненнь поліпшити якість життя людей і нашого
+            навколишнього середовища, наш бренд обіцяє - ми робимо все, що має значення, - це якраз і виражає дух того,
+            що ми робимо, і що ще більш важливо, чому ми це робимо. Робота, яку ми робимо, підвищує безпеку, надійність,
+            ефективність і стійкість.</p>
+        </div>
+        <a href="about-us.html" class="about-us__button">
+          <button>Читати далі</button>
+        </a>
       </div>
     </div>
     <footer class="footer" id="footer">
@@ -549,6 +634,8 @@
       </div>
     </footer>
   </div>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
